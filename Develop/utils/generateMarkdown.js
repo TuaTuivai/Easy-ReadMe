@@ -15,7 +15,15 @@ function renderLicenseBadge(license) {
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
 function renderLicenseLink(license) {
-  // reutrn "https://opensource.org/licenses/MIT"
+  if(license == "MIT") {
+    return "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)"
+  }
+  if(license == "Apache") {
+    return "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)"
+  }
+  if(license == "IBM") {
+    return "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)"
+  }
 }
 
 // TODO: Create a function that returns the license section of README
@@ -40,6 +48,15 @@ function generateMarkdown(answers) {
   
   ## License
   Link: ${renderLicenseLink(answers.license)}
+
+  ## GitHub
+  Link: ${answers.github}
+
+  ## Email Address
+  Link: ${answers.email}
+
+  ## Section
+  Link: ${renderLicenseSection(answers.renderLicenseSection)}
   `
 }
 

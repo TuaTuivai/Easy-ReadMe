@@ -31,6 +31,12 @@ inquirer
 
         },
         {
+            type:'input',
+            message:'email address?',
+            name:'email'
+
+        },
+        {
             type: 'list',
             message: "Which license would you like to apply?",
             name: 'license',
