@@ -25,6 +25,12 @@ inquirer
 
         },
         {
+            type:'input',
+            message:'what is your github username?',
+            name:'github'
+
+        },
+        {
             type: 'list',
             message: "Which license would you like to apply?",
             name: 'license',
